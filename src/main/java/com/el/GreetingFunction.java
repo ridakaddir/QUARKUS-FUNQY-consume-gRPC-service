@@ -3,6 +3,7 @@ package com.el;
 import javax.inject.Inject;
 
 import io.quarkus.funqy.Funq;
+import io.smallrye.mutiny.Uni;
 
 public class GreetingFunction {
 
@@ -10,7 +11,7 @@ public class GreetingFunction {
     GreetingService service;
 
     @Funq
-    public String greet() {
+    public Uni<String> greet() {
        return service.hello();
     }
 }
