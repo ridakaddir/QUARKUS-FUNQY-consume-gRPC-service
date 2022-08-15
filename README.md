@@ -1,4 +1,4 @@
-This example consumes this gRPC service https://grpcb.in:9000
+This example consumes this gRPC service https://grpcb.in:9001/ 
 
 ### Build
 
